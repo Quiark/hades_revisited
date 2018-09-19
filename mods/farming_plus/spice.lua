@@ -75,7 +75,7 @@ minetest.register_craftitem("farming_plus:spice_item", {
 	inventory_image = "farming_spice.png",
 })
 
-farming:add_plant("farming_plus:spice", {"farming_plus:spice_1", "farming_plus:spice_2"}, 50, 20)
+farming:add_plant("farming_plus:spice", {"farming_plus:spice_1", "farming_plus:spice_2"}, 150, 10)
 
 minetest.register_alias("farming_plus:spice_item", "farming_plus:spice_item")
 minetest.register_alias("farming_plus:spice_seed", "farming_plus:spice_seed")
