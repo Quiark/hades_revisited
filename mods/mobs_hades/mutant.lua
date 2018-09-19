@@ -67,6 +67,8 @@ mobs:register_mob("mobs_hades:mutant", {
 	step = 0.5,
 	blood_texture = "mobs_blood.png",
 	floats = 1,
+	replace_what = {'farming:strawberry_3'},
+	replace_with = 'default:dirt'
 })
 mobs:register_spawn("mobs_hades:mutant", {"default:sand"}, minetest.LIGHT_MAX, 0, 16000, 1, 31000)
 mobs:register_spawn("mobs_hades:mutant", {"default:sand"}, 5, 0, 6000, 3, 31000)
