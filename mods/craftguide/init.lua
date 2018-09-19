@@ -302,7 +302,13 @@ function craftguide:get_filter_items(data, player)
 
 	for i=1, #items_list do
 		local item = items_list[i]
-		local item_desc = reg_items[item].description:lower()
+		local desc = reg_items[item].description
+		local item_desc = ""
+		if desc ~= nil and desc.lower ~= nil then
+			item_desc = desc:lower()
+		else
+			print("item " .. item .. " has no description")
+		end
 
 		if filter ~= "" then
 			if item:find(filter, 1, true) or item_desc:find(filter, 1, true) then
